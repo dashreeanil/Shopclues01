@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Script.TestShopclues_03" hash-for-method="BuyMemoryCard">BuyMemoryCard</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Script.ValidSmartGadgetsBuy" hash-for-method="testSamrtGadgetsBuy">testSamrtGadgetsBuy</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,19 +120,19 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Script.TestShopclues_03</span>
+              <span class="class-name">Script.ValidSmartGadgetsBuy</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="BuyMemoryCard">
-                  </a> <!-- BuyMemoryCard -->
-                  <span class="method-name">BuyMemoryCard</span>
-                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
-	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
-	at java.util.ArrayList.get(ArrayList.java:429)
-	at POM.HomePage.clkMemoryCard(HomePage.java:158)
-	at Script.TestShopclues_03.BuyMemoryCard(TestShopclues_03.java:18)
+                  <a name="testSamrtGadgetsBuy">
+                  </a> <!-- testSamrtGadgetsBuy -->
+                  <span class="method-name">testSamrtGadgetsBuy</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:68)
+	at POM.HomePage.mousehover(HomePage.java:81)
+	at Script.ValidSmartGadgetsBuy.testSamrtGadgetsBuy(ValidSmartGadgetsBuy.java:15)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -167,7 +167,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--2072897324/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--1259719682/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -176,7 +176,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Script.TestShopclues_03&quot;/&gt;
+      &lt;class name=&quot;Script.ValidSmartGadgetsBuy&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -218,14 +218,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'BuyMemoryCard')
-data.setCell(0, 2, 'Script.TestShopclues_03')
-data.setCell(0, 3, 930);
+data.setCell(0, 1, 'testSamrtGadgetsBuy')
+data.setCell(0, 2, 'Script.ValidSmartGadgetsBuy')
+data.setCell(0, 3, 181);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 930 ms</span>
+              <span class="suite-total-time">Total running time: 181 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -251,21 +251,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Script.TestShopclues_03</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">Script.ValidSmartGadgetsBuy</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">BuyMemoryCard</span>
-                <span class="method-start">128518 ms</span>
+                <span class="method-name">testSamrtGadgetsBuy</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp</span>
-                <span class="method-start">130432 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

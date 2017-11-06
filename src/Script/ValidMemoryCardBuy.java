@@ -1,15 +1,13 @@
 package Script;
 
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import POM.HomePage;
 import POM.MemoryCardPage;
 import generics.BaseTest;
-import generics.CustomListner;
-@Listeners(CustomListner.class)
 
-public class TestShopclues_03 extends BaseTest {
+
+public class ValidMemoryCardBuy extends BaseTest {
 	@Test
 	public void BuyMemoryCard()
 	{
@@ -18,9 +16,7 @@ public class TestShopclues_03 extends BaseTest {
 		h.clkMemoryCard();
 		MemoryCardPage p= new MemoryCardPage(driver);
 		p.clkSamEv();
-		p.clkAddCart();
-		p.mousehover(driver);
-		p.clkViewCart();
+		p.clkBuy();
 	}
 
 }

@@ -18,13 +18,13 @@ import generics.BasePage;
 public class IvoomiPage extends BasePage{
 	@FindBy(xpath="//span//a[.='Ivoomi Me2']")
 	private WebElement ivoomiMe2;
-	@FindBy(id="add_cart")
+	@FindBy(xpath="//button[.='Add To Cart']")
 	private WebElement addCart;
-	@FindBy(id="buy")
-	private WebElement buyNow;
-	@FindBy(id="5411359")
+	@FindBy(xpath="//button[@id='buy']")
+	private WebElement buynow;
+	@FindBy(xpath="//span[@id='5411359']")
 	private WebElement colBlack;
-	@FindBy(id="5419828")
+	@FindBy(id="//span[@id='5419828']")
 	private WebElement colGold;
 	@FindBy(id="scrolltospecs")
 	private WebElement moreSpec;
@@ -68,8 +68,8 @@ public class IvoomiPage extends BasePage{
 	public void clkBuy()
 	{
 		WebDriverWait wait = new WebDriverWait(driver, ETO);
-		wait.until(ExpectedConditions.visibilityOf(buyNow));
-		buyNow.click();
+		wait.until(ExpectedConditions.visibilityOf(buynow));
+		buynow.click();
 	}
 	public void clkGold()
 	{
@@ -113,10 +113,7 @@ public class IvoomiPage extends BasePage{
 		Point y = driver.findElement(By.xpath("//span//a[.='View All']")).getLocation();
 		 j.executeScript("window.scrollTo(0,"+y+")");
 	}
-	public void verifyEle()
-	{
-		verifyElement(driver, ETO, addCart);
-	}
+
 	
 	
 

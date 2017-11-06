@@ -29,27 +29,36 @@ public class PrintlandBlackPage extends BasePage {
 	}
 	public void clkAddCart()
 	{
+		WebDriverWait wait = new WebDriverWait(driver, ETO);
+		wait.until(ExpectedConditions.visibilityOf(addCart));
 		addCart.click();
 	
 		
-		WebDriverWait wait = new WebDriverWait(driver, ETO);
-		wait.until(ExpectedConditions.visibilityOf(addCart));
+		
 	}
 	public void clkBuy()
 	{
+		WebDriverWait wait = new WebDriverWait(driver, ETO);
+		wait.until(ExpectedConditions.visibilityOf(buy));
 		buy.click();
 	}
 	
 	public void enterPinCode(String zip)
 	{
+		WebDriverWait wait = new WebDriverWait(driver, ETO);
+		wait.until(ExpectedConditions.visibilityOf(pinCode));
 		pinCode.sendKeys(zip);
 	}
 	public void clkcheck()
 	{
+		WebDriverWait wait = new WebDriverWait(driver, ETO);
+		wait.until(ExpectedConditions.visibilityOf(chkPinCode));
 		chkPinCode.click();
 	}
 	public void clkVisitSellerStore()
 	{
+		WebDriverWait wait = new WebDriverWait(driver, ETO);
+		wait.until(ExpectedConditions.visibilityOf(vstSellerStr));
 		vstSellerStr.click();
 	}
 	public void verifyEle()

@@ -28,5 +28,15 @@ public class BasePage implements IAutoConst {
 		}
 
 	}
+	public void sleep(int i)
+	{
+		try
+		{
+			Thread.sleep(i*1000);
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
 
 }

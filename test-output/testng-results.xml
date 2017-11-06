@@ -2,26 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="130609" started-at="2017-11-03T04:01:15Z" finished-at="2017-11-03T04:03:26Z">
+  <suite name="Default suite" duration-ms="267" started-at="2017-11-06T08:37:45Z" finished-at="2017-11-06T08:37:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="130609" started-at="2017-11-03T04:01:15Z" finished-at="2017-11-03T04:03:26Z">
-      <class name="Script.TestShopclues_03">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:Script.TestShopclues_03@1a968a59]" name="openApp" is-config="true" duration-ms="128518" started-at="2017-11-03T09:31:15Z" finished-at="2017-11-03T09:33:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method status="FAIL" signature="BuyMemoryCard()[pri:0, instance:Script.TestShopclues_03@1a968a59]" name="BuyMemoryCard" duration-ms="930" started-at="2017-11-03T09:33:24Z" finished-at="2017-11-03T09:33:25Z">
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index: 1, Size: 1]]>
-            </message>
+    <test name="Default test" duration-ms="267" started-at="2017-11-06T08:37:45Z" finished-at="2017-11-06T08:37:45Z">
+      <class name="Script.ValidSmartGadgetsBuy">
+        <test-method status="FAIL" signature="testSamrtGadgetsBuy()[pri:1, instance:Script.ValidSmartGadgetsBuy@5622fdf]" name="testSamrtGadgetsBuy" duration-ms="181" started-at="2017-11-06T14:07:45Z" finished-at="2017-11-06T14:07:45Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
-	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
-	at java.util.ArrayList.get(ArrayList.java:429)
-	at POM.HomePage.clkMemoryCard(HomePage.java:158)
-	at Script.TestShopclues_03.BuyMemoryCard(TestShopclues_03.java:18)
+              <![CDATA[java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
+	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:68)
+	at POM.HomePage.mousehover(HomePage.java:81)
+	at Script.ValidSmartGadgetsBuy.testSamrtGadgetsBuy(ValidSmartGadgetsBuy.java:15)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,15 +42,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BuyMemoryCard -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:Script.TestShopclues_03@1a968a59]" name="closeApp" is-config="true" duration-ms="85" started-at="2017-11-03T09:33:26Z" finished-at="2017-11-03T09:33:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- Script.TestShopclues_03 -->
+        </test-method> <!-- testSamrtGadgetsBuy -->
+      </class> <!-- Script.ValidSmartGadgetsBuy -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

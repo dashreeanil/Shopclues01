@@ -7,5 +7,5 @@ String XLPATH="./data/input.xlsx";
 String URL="http://www.shopclues.com/";
 long ITO=10;
 long ETO=10;
-String PHOTOPATH="./screenshots/";
+String PHOTOPATH="./Screenshot";
 }

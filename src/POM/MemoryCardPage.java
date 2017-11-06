@@ -32,16 +32,14 @@ public class MemoryCardPage extends BasePage{
 	
 	{
 		
-		WebDriverWait wait = new WebDriverWait(driver, ETO);
-		wait.until(ExpectedConditions.visibilityOf(samsunuEv));
+		verifyElement(driver, ETO, samsunuEv);
 		samsunuEv.click();
 		ArrayList<String> whs = new ArrayList<String>(driver.getWindowHandles()) ;
 		driver.switchTo().window(whs.get(2));
 	}
 	public void clkAddCart()
 	{
-		WebDriverWait wait = new WebDriverWait(driver, ETO);
-		wait.until(ExpectedConditions.visibilityOf(addCart));
+		verifyElement(driver, ETO, addCart);
 		addCart.click();
 	}
 	public void mousehover(WebDriver driver)
@@ -52,17 +50,16 @@ public class MemoryCardPage extends BasePage{
 	}
 	public void clkViewCart()
 	{
+		verifyElement(driver, ETO, viewCart);
 		viewCart.click();
 	}
 	
 	public void clkBuy()
 	{
+		verifyElement(driver, ETO, buy);
 		buy.click();
 	}
-	public void verifyEle()
-	{
-		verifyElement(driver, ETO, addCart);
-	}
+
 	
 	
 }

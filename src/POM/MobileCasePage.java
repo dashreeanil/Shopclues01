@@ -33,10 +33,8 @@ public class MobileCasePage extends BasePage {
 	}
 	public void clkPrintlandBlkCov()
 	{
+		verifyElement(driver, ETO, printAndAcc);
 		printAndAcc.click();
 	}
-	public void verifyEle()
-	{
-		verifyElement(driver, ETO, printAndAcc);
-	}
+
 }

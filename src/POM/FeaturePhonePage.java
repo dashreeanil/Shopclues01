@@ -23,6 +23,8 @@ public class FeaturePhonePage extends BasePage {
 	private WebElement featurePhone;
 	@FindBy(xpath="//input[@id='autocomplete']")
 	private WebElement searchBar;
+	@FindBy(xpath="//a[.='Search']")
+	private WebElement searchButton;
 	
 	public FeaturePhonePage(WebDriver driver)
 	{
@@ -31,8 +33,7 @@ public class FeaturePhonePage extends BasePage {
 	}
 	public void clkinovui7Mob()
 	{
-		WebDriverWait wait = new WebDriverWait(driver, ETO);
-		wait.until(ExpectedConditions.visibilityOf(inovui7));
+		verifyElement(driver, ETO, inovui7);
 		inovui7.click();
 		ArrayList<String> whs = new ArrayList<String>(driver.getWindowHandles()) ;
 
@@ -40,19 +41,18 @@ public class FeaturePhonePage extends BasePage {
 		
 
 	}
-	public void verifyEle()
-	{
-		verifyElement(driver, ETO, inovui7);
-	}
 	
-	public void enterContextInScrBar(String mobilename)
+	
+	public void enterContextInScrBar()
 	{
-		WebDriverWait wait = new WebDriverWait(driver, ETO);
-		wait.until(ExpectedConditions.visibilityOf(searchBar));
-		searchBar.sendKeys(mobilename);
-		
-		
+		verifyElement(driver, ETO, searchBar);
+		searchBar.sendKeys("inovuI7");
+				
 
+	}
+	public void clkSearchBtn()
+	{
+		searchButton.click();
 	}
 	
 	
